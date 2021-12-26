@@ -1,0 +1,70 @@
+@import '@/styles/variable.scss';
+
+.base-select {
+  position: relative;
+  width: 100%;
+  user-select: none;
+
+  &__label {
+    $font-size: 16px;
+
+    margin-bottom: 1rem;
+    font-size: $font-size;
+    line-height: calc(24px / $font-size);
+    font-weight: 700;
+  }
+
+  &__heading {
+    $font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: $font-size;
+    line-height: calc(28px / $font-size);
+    border: 1px solid $light-blue;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+
+  &__control {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: $white;
+
+    &-list {
+      max-height: 25rem;
+      border: 1px solid $light-blue;
+      border-radius: 0.4rem;
+      overflow: auto;
+
+      &__item {
+        $font-size: 16px;
+
+        padding: 1rem 2rem;
+        font-size: $font-size;
+        line-height: calc(24px / $font-size);
+
+        &:not(.\--no-result) {
+          cursor: pointer;
+        }
+
+        &:hover:not(.\--no-result),
+        &.\--active {
+          background-color: $light-blue;
+        }
+      }
+    }
+
+    .base-input {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &.\--opened {
+    z-index: 1;
+  }
+}

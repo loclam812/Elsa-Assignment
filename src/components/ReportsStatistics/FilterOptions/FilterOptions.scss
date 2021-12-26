@@ -1,0 +1,23 @@
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0;
+
+  &__group {
+    display: flex;
+    margin: 1.5rem 0;
+
+    .base-select {
+      margin-right: 1.5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: flex-end;
+    min-width: 15rem;
+  }
+}

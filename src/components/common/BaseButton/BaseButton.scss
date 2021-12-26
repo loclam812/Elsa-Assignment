@@ -1,0 +1,17 @@
+@import '@/styles/variable.scss';
+
+.btn {
+  min-width: 10rem;
+  padding: 1rem 2rem;
+  color: $white;
+  background-color: $light-blue;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $light-blue;
+  }
+}

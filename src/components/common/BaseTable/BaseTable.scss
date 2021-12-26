@@ -1,0 +1,40 @@
+@import '@/styles/variable.scss';
+
+.base-table {
+  overflow: auto;
+
+  &__table {
+    width: 100%;
+
+    &-head,
+    &-body {
+      $font-size: 16px;
+
+      font-size: $font-size;
+      line-height: calc(24px / $font-size);
+    }
+
+    &-head {
+      font-weight: 700;
+
+      &__column {
+        text-align: center;
+      }
+    }
+
+    &-body {
+      &__column {
+        text-align: right;
+      }
+    }
+
+    td {
+      padding: 1rem 2rem;
+      border: 1px solid $white-2;
+    }
+
+    tr:nth-child(even) {
+      background-color: $white-2;
+    }
+  }
+}
