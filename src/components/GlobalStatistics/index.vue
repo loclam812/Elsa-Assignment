@@ -118,7 +118,7 @@ export default {
 
       this.setError({})
       this.setTotalReports(data && data.data || {})
-    },
+    }
   },
 
   created () {
