@@ -1,4 +1,4 @@
-# elsa-test
+# elsa-assignment
 
 ## Project setup
 ```
